@@ -6,19 +6,23 @@ block main
   header.page-header
     .container
       .navbar.page-header__navbar
-        a.link.link--clear.app-logo.navbar__logo(href='#') Brunch
-        ul.list.list--clear.inline-list.navbar-list.navbar__list.navbar__list--responsive
-          li.navbar-list__item
-            a.link.link--clear.navbar-list__link(href='#') One link
-          li.navbar-list__item
-            a.link.link--clear.navbar-list__link(href='#') Two link
-          li.navbar-list__item
-            a.link.link--clear.navbar-list__link(href='#') Three
-          li.navbar-list__item
-            a.link.link--clear.navbar-list__link(href='#') Four element
-          li.navbar-list__item.navbar-list__item--last
-            a.link.link--clear.navbar-list__link(href='#') Five
         button.button.button--clear.button--outline.navbar__toggle.navbar__toggle--responsive.slide-out-menu-toggle(type='button') Menu
+        a.link.link--clear.app-logo.navbar__logo(href='#home')
+          .sprite-icon.sprite-icon--logo
+        ul.list.list--clear.inline-list.navbar-list.navbar__list.navbar__list--responsive
+          div.inline-list
+            li.navbar-list__item
+              a.link.link--clear.navbar-list__link(href='#home') Tour
+            li.navbar-list__item
+              a.link.link--clear.navbar-list__link(href='#home') Features
+            li.navbar-list__item
+              a.link.link--clear.navbar-list__link(href='#home') Pricing
+          div.inline-list
+            li.navbar-list__item
+              a.link.link--clear.navbar-list__link(href='#home') Help
+            li.navbar-list__item.navbar-list__item--last
+              a.link.link--clear.navbar-list__link(href='#home') Contact
+        button.button.button--clear.button--outline.navbar__button.navbar__button--responsive(type='button') Get App
   .slide-out-menu-container
     nav.menu.slide-out-menu
       header.menu-header
@@ -30,11 +34,11 @@ block main
         li.menu-list__item
           a.link.link--clear.menu-list__link(href='#features') Features
         li.menu-list__item
-          a.link.link--clear.menu-list__link(href='#iphone-feature') Iphone feature
+          a.link.link--clear.menu-list__link(href='#iphone-feature') Iphone Feature
         li.menu-list__item
-          a.link.link--clear.menu-list__link(href='#map-feature') Map feature
+          a.link.link--clear.menu-list__link(href='#map-feature') Map Feature
         li.menu-list__item.menu-list__item--last
-          a.link.link--clear.menu-list__link(href='#iphone-screens') Iphone screens
+          a.link.link--clear.menu-list__link(href='#iphone-screens') Iphone Screens
     .slide-out-menu-overlay
   main.main
     section#home.section.section--base.home.text-align.text-align--center
