@@ -5,3 +5,351 @@
 @import 'styles/mixins/_rem.styl'
 @import 'styles/mixins/_media.styl'
 @import 'styles/mixins/_composer.styl'
+light_gray = #8c8f94
+ultra_light_gray = #f5f5f8
+light_blue = #267df4
+features-line_color = #f4f4f4
+/*
+$sec5-bg = #f5f5f8;
+$blue-color = #267df4;
+
+.heading__decor {
+  display: inline-block;
+  padding: 3px 10px;
+  background-color: $base-color;
+  color: #fff;
+}
+*/
+.section
+  position: relative
+  top: 0
+  right: 0
+  bottom: 0
+  left: 0
+  overflow: hidden
+.home
+  padding-top: rem(160px)
+  padding-bottom: rem(430px)
+  background-image: url('images/home-bg.jpg')
+  background-position: center center
+  background-size: cover
+  background-repeat: no-repeat
+  +wider(media-md)
+    padding-top: rem(200px)
+    padding-bottom: rem(510px)
+  &__title
+    margin-bottom: rem(40px)
+    font-size: rem(40px)
+    font-family: 'Varela Round', sans-serif
+    +wider(media-md)
+      font-size: rem(60px)
+  &__text
+    margin-bottom: rem(60px)
+    color: light_gray
+    font-size: rem(20px)
+    font-family: 'Lato', sans-serif
+    line-height: 1.4
+  &__button
+    padding: rem(15px) rem(40px)
+    border-color: light_gray
+  &__phone-container
+    position: absolute
+    bottom: rem(-220px)
+    left: 50%
+    z-index: 20
+    width: rem(280px)
+    transform: translate(-50%)
+    +wider(media-md)
+      bottom: rem(-298px)
+      width: rem(369px)
+.features
+  padding-top: rem(100px)
+  padding-bottom: 0
+  +wider(media-lg)
+    padding-top: rem(120px)
+  &__content
+    padding-right: rem(10px)
+    padding-left: rem(10px)
+    +wider(media-xl)
+      padding-right: rem(38px)
+      padding-left: rem(38px)
+  &__title
+    margin-bottom: rem(42px)
+    font-weight: 300
+    font-size: 26px
+    font-family: 'Lato', sans-serif
+  &__text
+    margin-bottom: rem(26px)
+    color: light_gray
+    font-size: rem(18px)
+    font-family: 'Lato', sans-serif
+    line-height: 1.4
+    &--last
+      margin-bottom: 0
+  &__text-container
+    margin-bottom: rem(120px)
+  &__line
+    border-bottom: rem(1px) features-line_color solid
+  &__icon
+    margin-bottom: rem(40px)
+    width: rem(50px)
+    height: rem(54px)
+    background-position: left top
+    background-repeat: no-repeat
+    &--lock
+      background-image: url("images/lock-icon.png")
+    &--clock
+      background-image: url("images/clock-icon.png")
+.navbar-list
+  display: flex
+  justify-content: space-between
+  flex-grow: 1
+.navbar__logo
+  position: absolute
+  top: 50%
+  left: 50%
+  transform: translate(-50%, -50%)
+.iphone-feature
+  padding-top: 80px
+  padding-bottom: 60px
+  +wider(media-lg)
+    padding-top: 260px
+    padding-bottom: 310px
+  &__title
+    margin-bottom: 65px
+    font-size: 42px
+    font-family: 'Varela Round', sans-serif
+  &__text
+    margin-bottom: 26px
+    color: light_gray
+    font-size: 18px
+    font-family: 'Lato,' sans-serif
+    line-height: 1.4
+    &--last
+      margin-bottom: 0
+  &__text-container
+    margin-bottom: 76px
+  &__phone-container
+    margin-top: 64px
+    +wider(media-lg)
+      position: absolute
+      right: 48%
+      bottom: 100px
+      width: 932px
+  &__button
+    margin-right: 18px
+    margin-bottom: 16px
+    padding: 13px 26px
+    &--last
+      margin-right: 0
+.map-feature
+  overflow-x: hidden
+  padding-top: 105px
+  padding-bottom: 176px
+  +wider(media-lg)
+    padding-top: 135px
+    padding-bottom: 216px
+  &__map-container
+    margin-top: 64px
+    +wider(media-lg)
+      position: absolute
+      bottom: 190px
+      left: 47%
+      z-index: 20
+      margin-top: 0
+      width: 994px
+  &__title
+    margin-bottom: 58px
+    font-size: 42px
+    font-family: 'Varela Round', sans-serif
+  &__text
+    margin-bottom: 26px
+    color: light_gray
+    font-size: 18px
+    font-family: 'Lato', sans-serif
+    line-height: 1.4
+    &--last
+      margin-bottom: 0
+  &__text-container
+    margin-bottom: 60px
+  &__partners-title
+    margin-bottom: 27px
+    text-transform: uppercase
+    font-weight: 700
+    font-size: 14px
+    font-family: 'Lato', sans-serif
+  &__partner
+    display: inline-block
+    margin-right: 25px
+    height: 40px
+    background-position: left top
+    background-repeat: no-repeat
+    &--dropbox
+      width: 135px
+      background-image: url("images/dropbox.png")
+    &--evernote
+      width: 135px
+      background-image: url("images/evernote.png")
+    &--last
+      margin-right: 0
+.screens-list
+  position: relative
+  width: 100%
+  &__item
+    position: absolute
+  &__phone
+    top: 0
+    left: 50%
+    width: 220px
+    transform: translate(-50%)
+    +wider(media-md)
+      width: 298px
+    +wider(media-lg)
+      width: 395px
+  &__screen
+    top: 52px
+    width: 178px
+    box-shadow: 10px 10px 16px 0 rgba(61, 61, 62, .15)
+    +wider(media-md)
+      top: 68px
+      width: 240px
+    +wider(media-lg)
+      top: 92px
+      width: 320px
+    &--1
+      left: 50%
+      margin-left: -502px
+      +wider(media-md)
+        margin-left: -680px
+      +wider(media-lg)
+        margin-left: -880px
+    &--2
+      left: 50%
+      margin-left: -304px
+      +wider(media-md)
+        margin-left: -410px
+      +wider(media-lg)
+        margin-left: -530px
+    &--3
+      right: 50%
+      margin-right: -304px
+      +wider(media-md)
+        margin-right: -410px
+      +wider(media-lg)
+        margin-right: -530px
+    &--4
+      right: 50%
+      margin-right: -502px
+      +wider(media-md)
+        margin-right: -680px
+      +wider(media-lg)
+        margin-right: -880px
+.iphone-screens
+  overflow-x: hidden
+  padding-top: 120px
+  padding-bottom: 576px
+  background-color: ultra_light_gray
+  +wider(media-md)
+    padding-bottom: 736px
+  +wider(media-lg)
+    padding-top: 143px
+    padding-bottom: 916px
+  &__line
+    margin: 0 auto 42px
+    width: 50px
+    border: 0
+    border-bottom: 2px light_blue solid
+  &__title
+    margin-bottom: 48px
+    font-size: 42px
+    font-family: 'Varela Round', sans-serif
+  &__subtitle
+    margin-bottom: 40px
+    color: light_gray
+    text-transform: uppercase
+    letter-spacing: .1em
+    font-weight: 700
+    font-size: 12px
+    font-family: 'Lato', sans-serif
+/*
+
+
+
+
+
+
+
+.section-6 {
+  padding-top: 78px;
+  padding-bottom: 128px;
+  background-color: $sec5-bg;
+
+  &__title {
+    margin-bottom: 46px;
+    font-size: 42px;
+    font-family: "Varela Round", sans-serif;
+  }
+
+  &__subtitle {
+    margin-bottom: 34px;
+    color: $light-gray;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    font-size: 12px;
+    font-family: "Roboto", sans-serif;
+  }
+}
+
+.email-form {
+}
+
+.section-6-subtitle__bold {
+  font-weight: 700;
+}
+
+.slide-out-menu {
+  position: fixed;
+  top: 0;
+  left: -380px;
+  z-index: 50;
+  padding: 40px;
+  max-width: 650px;
+  width: 380px;
+  height: 100%;
+  background-color: #26272d;
+  transition: all .7s cubic-bezier(.545, 0, .05, 1);
+  -webkit-transition: all .7s cubic-bezier(.545, 0, .05, 1);
+
+  &--open {
+    left: 0;
+  }
+
+  &__toggle {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-color: #fff;
+    color: #fff;
+  }
+}
+
+@media only screen and (max-width: $media-md) {
+  .menu {
+    width: 300px;
+
+    &--xs {
+      overflow-y: auto;
+    }
+  }
+}
+
+.navbar__list {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .navbar__list {
+    display: flex;
+  }
+}
+*/
