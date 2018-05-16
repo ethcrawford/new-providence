@@ -109,7 +109,7 @@ block main
         .map-feature__map-container.wow.fadeInRight.animated
           .map-feature__map
             img.image.image--auto(src='images/map.png' alt='Map')
-    section#iphone-screens.section.section--base.iphone-screens
+    section#iphone-screens.section.section--base.iphone-screens.section.section--base.iphone-screens
       .container
         .row
           .col-lg-6.offset-lg-3
@@ -129,5 +129,65 @@ block main
             li.screens-list__item.screens-list__screen.screens-list__screen--4
               img.image.image--auto(src='images/screen-4.png' alt='iPhone screen')
   footer.page-footer
-    .container
-      p.text.text--clear.copyright-text &copy; Ethcrawford 2018
+    div.page-footer__main
+      .container
+        .row
+          .col-lg-3
+            div.section.section--base.new-providence-footer
+              a.link.link--clear.app-logo(href='#home')
+                .sprite-icon.sprite-icon--logo
+              p.text.text--clear
+                | It was some time before he obtained any answer, and the reply, when made, was unpropitious.
+              a.link.link--clear(href='#home')
+                .sprite-icon.sprite-icon--app-store
+          .col-lg-2.offset-lg-3
+            section#learn-more.section.section--base.learn-more
+              h2.heading.heading--clear.section__title.learn-more__title
+                | Learn more
+              //- Common ul list
+              ul.list.list--clear
+                li
+                  a.link.link--clear(href='#learn-more') How it works?
+                li
+                  a.link.link--clear(href='#learn-more') Meeting tools
+                li
+                  a.link.link--clear(href='#learn-more') Live striming
+                li
+                  a.link.link--clear(href='#learn-more') Contact method
+          .col-lg-2
+            section#about-us.section.section--base.about-us
+              h2.heading.heading--clear.section__title.about-us__title
+                | About Us
+              //- Common ul list
+              ul.list.list--clear
+                li
+                  a.link.link--clear(href='#about-us') About Us
+                li
+                  a.link.link--clear(href='#about-us') Features
+                li
+                  a.link.link--clear(href='#about-us') Privacy police
+                li
+                  a.link.link--clear(href='#about-us') Terms &amp; Conditions
+          .col-lg-2
+            section#support.section.section--base.support
+              h2.heading.heading--clear.section__title.support__title
+                | Support
+              //- Common ul list
+              ul.list.list--clear
+                li
+                  a.link.link--clear(href='#') F.A.Q.
+                li
+                  a.link.link--clear(href='#') Contact Us
+                li
+                  a.link.link--clear(href='#') Live chat
+                li
+                  a.link.link--clear(href='#')  Phone call
+    div
+      .container
+        p.text.text--clear.copyright-text &copy; Ethcrawford 2018
+        p.text.text--clear
+          | For more freebies visit: 
+          a.link.link--clear(href='#home') http://getcraftwork.com
+        div
+          p.text.text--clear Made with love by
+          .sprite-icon.sprite-icon--craftwork
